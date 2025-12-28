@@ -49,7 +49,7 @@ export default function Index() {
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.container}>
           <View style={styles.header}>
-            <Text style={styles.title}>QCM - Suivi des reponses</Text>
+            <Text style={styles.title}>QCM Transport</Text>
             <Text style={styles.subtitle}>
               {answeredCount}/{TOTAL_QUESTIONS} questions repondues
             </Text>
