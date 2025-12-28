@@ -7,6 +7,7 @@ import {
   View,
 } from "react-native";
 import { SafeAreaProvider, SafeAreaView } from "react-native-safe-area-context";
+import ExamTimer from "./components/ExamTimer";
 
 type AnswerState = "correct" | "incorrect" | null;
 
@@ -57,6 +58,7 @@ export default function Index() {
               Bonnes reponses: {correctCount} / {TOTAL_QUESTIONS}
             </Text>
             <Text style={styles.score}>Note: {score} points</Text>
+            <ExamTimer />
             <Pressable style={styles.resetButton} onPress={resetAll}>
               <Text style={styles.resetText}>Reinitialiser</Text>
             </Pressable>
