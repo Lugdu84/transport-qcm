@@ -32,7 +32,10 @@ export default function Question({
 
   return (
     <View style={styles.card}>
-      <Text style={styles.questionText}>{question.text}</Text>
+      <View style={styles.questionHeader}>
+        <Text style={styles.questionNumber}>{question.id}</Text>
+        <Text style={styles.questionText}>{question.text}</Text>
+      </View>
       <View style={styles.choices}>
         {question.choices.map((choice) => {
           const isSelected = choice.id === selectedId;
@@ -58,12 +61,9 @@ export default function Question({
               ]}
             >
               <Text
-                style={[
-                  styles.choiceId,
-                  useAccentText && styles.choiceTextSelected,
-                ]}
+                style={[styles.choiceLetter, useAccentText && styles.choiceTextSelected]}
               >
-                {choice.id}
+                {choice.id}.
               </Text>
               <Text
                 style={[
@@ -89,11 +89,29 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderColor: "#1e293b",
   },
+  questionHeader: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 10,
+    marginBottom: 12,
+  },
+  questionNumber: {
+    minWidth: 32,
+    paddingVertical: 2,
+    paddingHorizontal: 6,
+    borderRadius: 8,
+    backgroundColor: "#1e293b",
+    color: "#93c5fd",
+    fontWeight: "700",
+    textAlign: "center",
+  },
   questionText: {
     color: "#f8fafc",
     fontWeight: "700",
     fontSize: 16,
-    marginBottom: 12,
+    flex: 1,
+    flexWrap: "wrap",
+    flexShrink: 1,
   },
   choices: {
     gap: 10,
@@ -101,7 +119,7 @@ const styles = StyleSheet.create({
   choice: {
     flexDirection: "row",
     gap: 10,
-    alignItems: "center",
+    alignItems: "flex-start",
     padding: 12,
     borderRadius: 12,
     borderWidth: 1,
@@ -120,20 +138,14 @@ const styles = StyleSheet.create({
     backgroundColor: "#f97316",
     borderColor: "#f97316",
   },
-  choiceId: {
-    width: 28,
-    height: 28,
-    borderRadius: 14,
-    textAlign: "center",
-    textAlignVertical: "center",
-    color: "#e2e8f0",
-    fontWeight: "700",
-    backgroundColor: "#1e293b",
-  },
   choiceLabel: {
     flex: 1,
     color: "#e2e8f0",
     fontWeight: "600",
+  },
+  choiceLetter: {
+    color: "#cbd5f5",
+    fontWeight: "700",
   },
   choiceTextSelected: {
     color: "#0f172a",

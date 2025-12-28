@@ -123,22 +123,45 @@ export const QCM = [
 		],
 		resolution: 'D',
 	},
+	// {
+	// 	id: 9,
+	// 	text: 'Une société à responsabilité limitée ( SARL ) est dite de personnes lorsque :',
+	// 	choices: [
+	// 		{
+	// 			id: 'A',
+	// 			label: 'les décisions sont prises à la majorité des voix des associés',
+	// 		},
+	// 		{
+	// 			id: 'B',
+	// 			label: "les décisions sont prises à l'unanimité des associés",
+	// 		},
+	// 		{ id: 'C', label: 'les décisions sont prises par le gérant seul' },
+	// 		{
+	// 			id: 'D',
+	// 			label: "les décisions sont prises par un conseil d'administration",
+	// 		},
+	// 	],
+	// 	resolution: 'A',
+	// },
 	{
 		id: 9,
-		text: 'Une société à responsabilité limitée ( SARL ) est dite de personnes lorsque :',
+		text: "Trois associés, Pierre, Paul et Jacques décident de constituer une SARL. Pierre apporte 460  en espèces, Paul apporte un terrain évalué à 10700 €. Jacques apporte 3100 € et un véhicule évalué à 9 200 €. L'assemblée générale des associés décide que Jacque sera le gérant unique de la SARL :",
 		choices: [
 			{
 				id: 'A',
-				label: 'les décisions sont prises à la majorité des voix des associés',
+				label: 'il sera majoritaire',
 			},
 			{
 				id: 'B',
-				label: "les décisions sont prises à l'unanimité des associés",
+				label: 'il sera minoritaire',
 			},
-			{ id: 'C', label: 'les décisions sont prises par le gérant seul' },
+			{
+				id: 'C',
+				label: 'il pourra être salarié',
+			},
 			{
 				id: 'D',
-				label: "les décisions sont prises par un conseil d'administration",
+				label: 'il devra obligatoirement être salarié',
 			},
 		],
 		resolution: 'A',
@@ -170,7 +193,7 @@ export const QCM = [
 	},
 	{
 		id: 12,
-		text: 'COURS Le numéro SIREN est attribué par :',
+		text: 'Le numéro SIREN est attribué par :',
 		choices: [
 			{ id: 'A', label: 'le CFE' },
 			{ id: 'B', label: 'le greffe du Tribunal de commerce' },
@@ -219,342 +242,368 @@ export const QCM = [
 	},
 	{
 		id: 15,
-		text: "Le numéro SIRET d'une entreprise correspond :",
+		text: 'Le compte de résultat permet de :',
 		choices: [
-			{ id: 'A', label: "au numéro SIREN de l'entreprise" },
-			{ id: 'B', label: 'au numéro de TVA intracommunautaire' },
-			{ id: 'C', label: "au numéro d'identification de chaque établissement" },
-			{ id: 'D', label: "au numéro d'inscription au registre du commerce" },
+			{ id: 'A', label: 'déterminer la trésorerie de l’entreprise' },
+			{
+				id: 'B',
+				label: 'traduire l’activité de l’entreprise sur l’exercice comptable',
+			},
+			{
+				id: 'C',
+				label: 'chiffrer les investissements de l’exercice comptable',
+			},
+			{
+				id: 'D',
+				label:
+					'traduire la situation financière de l’entreprise en fin d’exercice',
+			},
 		],
 		resolution: 'B',
 	},
 	{
 		id: 16,
-		text: 'Le numéro SIRET est composé de :',
+		text: 'La marge bénéficiaire est donnée par le calcul suivant :',
 		choices: [
-			{ id: 'A', label: '7 chiffres + 5 chiffres' },
-			{ id: 'B', label: '9 chiffres + 5 chiffres' },
-			{ id: 'C', label: '9 chiffres + 9 chiffres' },
-			{ id: 'D', label: '5 chiffres + 9 chiffres' },
+			{ id: 'A', label: 'coût de revient - amortissements' },
+			{ id: 'B', label: 'prix de vente - coût de revient' },
+			{ id: 'C', label: "coût d'achat + coût de revient" },
+			{ id: 'D', label: 'prix de vente x coefficient' },
 		],
 		resolution: 'B',
 	},
 	{
 		id: 17,
-		text: 'Le capital social d’une société anonyme est de 90 000 € ; des actions d’une valeur nominale de 100 € sont proposées à des investisseurs, actions qu’ils doivent libérer au quart lors de la souscription. On commence à parler de capitaux propres à partir :',
+		text: "On trouve les règles d'accès à la profession dans :",
 		choices: [
-			{ id: 'A', label: 'de 90 000 €' },
-			{ id: 'B', label: 'de 22 500 €' },
-			{ id: 'C', label: 'de 67 500 €' },
-			{ id: 'D', label: 'de 100 €' },
+			{ id: 'A', label: 'le Code des transports' },
+			{ id: 'B', label: 'le Code de commerce' },
+			{ id: 'C', label: 'le Code de la route' },
+			{ id: 'D', label: 'le Code civil' },
 		],
 		resolution: 'A',
 	},
 	{
 		id: 18,
-		text: 'Le capital social d’une société anonyme est de 90 000 €. Elle a émis des actions d’une valeur nominale de 100 €, qu’elle a proposées à des investisseurs. Ils ont libéré les fonds au quart lors de la souscription. Les capitaux propres de la société ont augmenté de :',
+		text: 'Quel est le changement qui doit obligatoirement être signalé à la DREAL ?',
 		choices: [
-			{ id: 'A', label: '90 000 €' },
-			{ id: 'B', label: '22 500 €' },
-			{ id: 'C', label: '67 500 €' },
-			{ id: 'D', label: '100 €' },
+			{ id: 'A', label: "remplacement d'un véhicule" },
+			{ id: 'B', label: "changement d'adresse de l'entreprise" },
+			{ id: 'C', label: "changement d'adresse du gérant" },
+			{ id: 'D', label: 'nouveau contrat' },
 		],
 		resolution: 'B',
 	},
 	{
 		id: 19,
-		text: 'Les actions à dividende prioritaire sans droit de vote :',
+		text: 'Parmi ces transports quels sont ceux qui nécessitent une inscription au registre des transporteurs :',
 		choices: [
+			{ id: 'A', label: 'les transports effectués avec un scooter' },
+			{ id: 'B', label: 'les transports de véhicules en pannes ou accidentés' },
+			{ id: 'C', label: 'les trnsports effectués par la Poste' },
 			{
-				id: 'A',
+				id: 'D',
 				label:
-					'éliminent le droit de vote mais donnent un avantage sur le dividende',
+					'les transports à titre gracieux exécutés par une exploitation agricole pour une autre exploitation agricole',
 			},
-			{
-				id: 'B',
-				label:
-					'éliminent le dividende mais donnent un avantage sur le droit de vote',
-			},
-			{ id: 'C', label: 'éliminent le droit de vote et le dividende' },
-			{ id: 'D', label: 'ne sont pas autorisées' },
 		],
 		resolution: 'A',
 	},
 	{
 		id: 20,
-		text: "COURS L'assemblée générale ordinaire ( AGO ) d'une société commerciale :",
+		text: "Le gestionnaire de transport salarié démissionne. L'entreprise doit aviser la DREAL sous :",
 		choices: [
-			{
-				id: 'A',
-				label: 'se réunit au moins une fois par an pour approuver les comptes',
-			},
-			{
-				id: 'B',
-				label: 'se réunit uniquement en cas de modification des statuts',
-			},
-			{
-				id: 'C',
-				label: 'ne se réunit que sur demande du commissaire aux comptes',
-			},
-			{ id: 'D', label: 'se réunit tous les cinq ans' },
+			{ id: 'A', label: '28 jours' },
+			{ id: 'B', label: '1 mois' },
+			{ id: 'C', label: '6 mois' },
+			{ id: 'D', label: '9 mois' },
 		],
 		resolution: 'A',
 	},
 	{
 		id: 21,
-		text: "L’assemblée générale extraordinaire ( AGE ) d'une société commerciale :",
+		text: "Lors de la création d'une entreprise de transport public, les quatre conditions d'accès sont vérifiées par :",
 		choices: [
-			{ id: 'A', label: 'se réunit au moins une fois par an' },
-			{
-				id: 'B',
-				label: 'se réunit uniquement en cas de modification des statuts',
-			},
-			{ id: 'C', label: 'se réunit tous les cinq ans' },
-			{
-				id: 'D',
-				label: 'ne se réunit que sur demande du commissaire aux comptes',
-			},
+			{ id: 'A', label: "les DREAL et la DRIEA pour l'Ile-de-France" },
+			{ id: 'B', label: 'les greffes des tribunaux de commerce' },
+			{ id: 'C', label: "le guichet unique de l'INPI" },
+			{ id: 'D', label: "l'INSEE" },
 		],
 		resolution: 'A',
 	},
 	{
 		id: 22,
-		text: 'COURS La réserve légale d’une société commerciale :',
+		text: 'Les véhicules pris en compte pour la détermination de la capacité financière sont :',
 		choices: [
 			{
 				id: 'A',
-				label:
-					'est une partie du bénéfice mise en réserve pour faire face aux pertes éventuelles',
+				label: "les véhicules moteur dont l'entreprise est propriétaire",
 			},
-			{ id: 'B', label: 'est une réserve facultative décidée par le gérant' },
-			{ id: 'C', label: 'est une réserve utilisée pour payer les dividendes' },
-			{ id: 'D', label: 'est une réserve qui peut être distribuée librement' },
+			{ id: 'B', label: "tous les véhicules utilisés par l'entreprise" },
+			{
+				id: 'C',
+				label:
+					"tous les véhicules moteur utilisés par l'entreprise à l'exception des “ 2 roues “",
+			},
+			{
+				id: 'D',
+				label:
+					"tous les véhicules moteur utilisés par l'entreprise y compris les “ 2 roues “",
+			},
 		],
 		resolution: 'D',
 	},
 	{
 		id: 23,
-		text: 'La réserve légale d’une société anonyme doit atteindre au minimum :',
+		text: 'Pour le transport routier, le délai maximum de paiement est de :',
 		choices: [
-			{ id: 'A', label: '10 % du capital social' },
-			{ id: 'B', label: '20 % du capital social' },
-			{ id: 'C', label: '50 % du capital social' },
-			{ id: 'D', label: '100 % du capital social' },
+			{
+				id: 'A',
+				label: "30 jours à compter de la date d'émission de la facture",
+			},
+			{ id: 'B', label: '45 jours fin de mois' },
+			{
+				id: 'C',
+				label: '45 jours à dater de la livraison de la marchandise',
+			},
+			{
+				id: 'D',
+				label: "60 jours à compter de l'émission de la facture",
+			},
 		],
 		resolution: 'A',
 	},
 	{
 		id: 24,
-		text: 'Les provisions pour risques et charges permettent :',
+		text: 'Vous créez une SARL et vous souhaitez utiliser 5 véhicules de 2,5 tonnes de PMA, une remorque de 800 kg et un scooter pour effectuer des livraisons de plis. Le capital social de votre SARL devra logiquement être de :',
 		choices: [
-			{
-				id: 'A',
-				label: 'de faire apparaître un résultat supérieur à la réalité',
-			},
-			{ id: 'B', label: 'de lisser les résultats sur plusieurs exercices' },
-			{ id: 'C', label: 'de réduire artificiellement les dettes' },
-			{ id: 'D', label: 'de constituer une provision pour l’Urssaf' },
+			{ id: 'A', label: '4 500 €' },
+			{ id: 'B', label: '5 400 €' },
+			{ id: 'C', label: '6 300 €' },
+			{ id: 'D', label: '7 200 €' },
 		],
 		resolution: 'C',
 	},
 	{
 		id: 25,
-		text: 'COURS Le statut de conjoint collaborateur peut être choisi lorsque :',
+		text: 'La licence de transport et ses copies conformes doivent être renouvelées :',
 		choices: [
-			{
-				id: 'A',
-				label: 'le conjoint travaille dans l’entreprise sans être rémunéré',
-			},
-			{ id: 'B', label: 'le conjoint est salarié de l’entreprise' },
-			{ id: 'C', label: 'le conjoint est associé majoritaire' },
-			{ id: 'D', label: 'le conjoint est gérant' },
+			{ id: 'A', label: 'tous les ans' },
+			{ id: 'B', label: 'tous les 5 ans' },
+			{ id: 'C', label: 'seules les copies sont à renouveler' },
+			{ id: 'D', label: 'à expiration de leur date de validité' },
 		],
 		resolution: 'D',
 	},
 	{
 		id: 26,
-		text: 'Le statut de conjoint salarié suppose :',
+		text: 'En transport international, les limites de responsabilité du transporteur en cas de dommage ou de retard sont définies par :',
 		choices: [
-			{ id: 'A', label: "l'existence d’un contrat de travail et d’un salaire" },
-			{
-				id: 'B',
-				label: 'l’absence de contrat de travail mais une rémunération',
-			},
-			{
-				id: 'C',
-				label: 'l’absence de rémunération mais un contrat de travail',
-			},
-			{ id: 'D', label: 'aucune condition particulière' },
+			{ id: 'A', label: 'ses conditions générales, obligatoirement' },
+			{ id: 'B', label: 'les contrats types et la convention de Genève' },
+			{ id: 'C', label: 'la convention de Genève dite “ CMR “' },
+			{ id: 'D', label: 'le Code de commerce' },
 		],
 		resolution: 'C',
 	},
 	{
 		id: 27,
-		text: 'COURS Le gérant minoritaire d’une SARL :',
+		text: "Un transporteur qui n'est pas inscrit au registre des commissionnaires de transport peut avoir recours à la sous-traitance en cas de surcharge temporaire d'activité, sans dépasser une limite du chiffre d'affaires annuel de l'activité transport routier de l'entreprise. Cette limite est :",
 		choices: [
-			{ id: 'A', label: 'est affilié au régime des travailleurs non salariés' },
-			{
-				id: 'B',
-				label: 'est affilié au régime général de la sécurité sociale',
-			},
-			{ id: 'C', label: 'n’a aucune protection sociale' },
-			{ id: 'D', label: 'est affilié au régime des fonctionnaires' },
+			{ id: 'A', label: '10 %' },
+			{ id: 'B', label: '15 %' },
+			{ id: 'C', label: '20 %' },
+			{ id: 'D', label: '25%' },
 		],
 		resolution: 'B',
 	},
 	{
 		id: 28,
-		text: 'Le gérant majoritaire d’une SARL :',
+		text: 'Les réserves doivent être :',
 		choices: [
 			{
 				id: 'A',
-				label: 'est affilié au régime général de la sécurité sociale',
+				label: 'précisées et validées par le transporteur uniquement',
 			},
-			{ id: 'B', label: 'est affilié au régime des travailleurs non salariés' },
-			{ id: 'C', label: 'n’a aucune protection sociale' },
-			{ id: 'D', label: 'est affilié au régime des fonctionnaires' },
+			{
+				id: 'B',
+				label:
+					'écrites sur la lettre de voiture avec la mention “ sous réserve de déballage “',
+			},
+			{
+				id: 'C',
+				label: 'écrites, précises, motivées et contradictoires',
+			},
+			{
+				id: 'D',
+				label:
+					'toujours être approuvées par le transporteur au moment de la livraison',
+			},
 		],
 		resolution: 'C',
 	},
 	{
 		id: 29,
-		text: 'COURS Le statut social du dirigeant d’une EURL dépend :',
+		text: 'En transport national, Monsieur Lambert a reçu ses marchandises le jeudi à 11 h 00 en cas de litige, il doit confirmer par écrit ses réserves au transporteur au plus tard le :',
 		choices: [
-			{ id: 'A', label: 'du montant du capital social' },
-			{ id: 'B', label: 'du nombre de salariés' },
-			{ id: 'C', label: "du fait qu'il soit gérant associé unique ou non" },
-			{ id: 'D', label: 'du montant du chiffre d’affaires' },
+			{ id: 'A', label: 'dimanche 24 h 00' },
+			{ id: 'B', label: 'lundi suivant 11 h 00' },
+			{ id: 'C', label: 'lundi suivant 24 h 00' },
+			{ id: 'D', label: 'mardi suivant 11 h' },
 		],
 		resolution: 'C',
 	},
 	{
 		id: 30,
-		text: 'Dans une entreprise individuelle, le chef d’entreprise :',
+		text: 'Les réserves permettent :',
 		choices: [
-			{ id: 'A', label: 'est assimilé salarié' },
-			{ id: 'B', label: 'est travailleur non salarié' },
-			{ id: 'C', label: 'est fonctionnaire' },
-			{ id: 'D', label: 'n’a aucune couverture sociale' },
+			{ id: 'A', label: 'd’utiliser les recettes de l’année' },
+			{ id: 'B', label: 'de conserver en ressources une partie du bénéfice' },
+			{
+				id: 'C',
+				label: 'de conserver une partie sur un compte bloqué en banque',
+			},
+			{ id: 'D', label: 'de constituer une provision pour l’Urssaf' },
 		],
 		resolution: 'B',
 	},
 	{
 		id: 31,
-		text: 'COURS La DUE ( déclaration unique d’embauche ) :',
+		text: 'Les loyers des véhicules pris en location sont enregistrés :',
 		choices: [
-			{ id: 'A', label: 'doit être effectuée avant l’embauche du salarié' },
-			{ id: 'B', label: 'peut être faite jusqu’à un mois après l’embauche' },
-			{ id: 'C', label: 'n’est pas obligatoire' },
-			{ id: 'D', label: 'est réservée aux entreprises de plus de 10 salariés' },
+			{ id: 'A', label: 'au passif du bilan' },
+			{ id: 'B', label: 'dans les charges exceptionnelles' },
+			{ id: 'C', label: "dans les charges d'exploitation" },
+			{ id: 'D', label: 'dans les charges financières' },
 		],
 		resolution: 'C',
 	},
 	{
 		id: 32,
-		text: 'La visite médicale d’embauche :',
+		text: "Le solde positif du compte bancaire au dernier jour de l'exercice figure dans :",
 		choices: [
-			{ id: 'A', label: 'doit être réalisée avant l’embauche' },
-			{
-				id: 'B',
-				label: 'doit être réalisée dans les 3 mois suivant l’embauche',
-			},
-			{ id: 'C', label: 'n’est obligatoire que pour les CDD' },
-			{ id: 'D', label: 'n’est pas obligatoire' },
+			{ id: 'A', label: "l'actif du bilan" },
+			{ id: 'B', label: 'le passif du bilan' },
+			{ id: 'C', label: 'les charges du compte de résultat' },
+			{ id: 'D', label: 'les produits du compte de résultat' },
 		],
 		resolution: 'A',
 	},
 	{
 		id: 33,
-		text: 'COURS Le contrat de travail à durée déterminée ( CDD ) :',
+		text: 'Dans le compte de résultat, les frais de déplacements sont enregistrés dans un compte de :',
 		choices: [
-			{
-				id: 'A',
-				label:
-					'peut être conclu pour pourvoir durablement un emploi lié à l’activité normale de l’entreprise',
-			},
-			{
-				id: 'B',
-				label:
-					'ne peut être conclu que pour l’exécution d’une tâche précise et temporaire',
-			},
-			{ id: 'C', label: 'peut être conclu sans motif' },
-			{ id: 'D', label: 'n’a pas de durée maximale' },
+			{ id: 'A', label: 'charges de personnel' },
+			{ id: 'B', label: 'autres charges externes' },
+			{ id: 'C', label: 'frais financiers' },
+			{ id: 'D', label: 'charges sur opérations de gestion' },
 		],
 		resolution: 'B',
 	},
 	{
 		id: 34,
-		text: 'La période d’essai d’un CDD de 6 mois est au maximum de :',
+		text: 'Les dividendes sont :',
 		choices: [
-			{ id: 'A', label: '1 jour' },
-			{ id: 'B', label: '1 semaine' },
-			{ id: 'C', label: '2 semaines' },
-			{ id: 'D', label: '1 mois' },
+			{
+				id: 'A',
+				label:
+					'la partie du bénéfice qui est inscrite dans un compte de réserves',
+			},
+			{
+				id: 'B',
+				label: 'la partie du bénéfice que se partagent les associés',
+			},
+			{ id: 'C', label: 'la rémunération du gérant' },
+			{ id: 'D', label: 'répartis selon le choix du gérant' },
 		],
 		resolution: 'B',
 	},
 	{
 		id: 35,
-		text: 'COURS Le SMIC correspond :',
+		text: "La visite médicale d'information et de prévention doit être pratiquée :",
 		choices: [
-			{ id: 'A', label: 'au salaire moyen dans l’entreprise' },
-			{ id: 'B', label: 'au salaire minimum interprofessionnel de croissance' },
-			{ id: 'C', label: 'au salaire maximum autorisé' },
-			{ id: 'D', label: 'au salaire des cadres' },
+			{
+				id: 'A',
+				label: 'avant la prise effective du poste de travail',
+			},
+			{
+				id: 'B',
+				label: "avant la fin de la période d'essai",
+			},
+			{
+				id: 'C',
+				label: "après la fin de la période d'essai",
+			},
+			{
+				id: 'D',
+				label:
+					'dans les trois mois à compter de la prise effective du poste de travail',
+			},
 		],
 		resolution: 'D',
 	},
 	{
 		id: 36,
-		text: 'La durée légale hebdomadaire du travail en France est :',
+		text: "La mise en place d'un Conseil Economique et Social ( CES ) est obligatoire dans les entreprises dont le nombre de salariés est d'au moins :",
 		choices: [
-			{ id: 'A', label: '35 heures' },
-			{ id: 'B', label: '39 heures' },
-			{ id: 'C', label: '40 heures' },
-			{ id: 'D', label: '48 heures' },
+			{ id: 'A', label: '10' },
+			{ id: 'B', label: '11' },
+			{ id: 'C', label: '20' },
+			{ id: 'D', label: '50' },
 		],
 		resolution: 'B',
 	},
 	{
 		id: 37,
-		text: 'COURS Les heures supplémentaires :',
+		text: 'Le certificat de travail mentionne obligatoirement :',
 		choices: [
-			{ id: 'A', label: 'sont toujours interdites' },
+			{ id: 'A', label: 'les dates d’entrée et de sortie' },
+			{ id: 'B', label: 'le motif de fin de contrat ( rupture )' },
 			{
-				id: 'B',
-				label:
-					'sont les heures effectuées au-delà de la durée légale hebdomadaire',
+				id: 'C',
+				label: 'une appréciation générale sur les qualités professionnelles',
 			},
-			{ id: 'C', label: 'n’ouvrent droit à aucune majoration' },
-			{ id: 'D', label: 'sont payées au même taux que les heures normales' },
+			{ id: 'D', label: 'l’existence d’une clause de non concurrence' },
 		],
 		resolution: 'A',
 	},
 	{
 		id: 38,
-		text: 'La durée maximale hebdomadaire du travail ( heures supplémentaires comprises ) ne peut dépasser :',
+		text: 'La convention collective applicable dans l’entreprise doit :',
 		choices: [
-			{ id: 'A', label: '44 heures' },
-			{ id: 'B', label: '48 heures' },
-			{ id: 'C', label: '50 heures' },
-			{ id: 'D', label: '60 heures' },
+			{ id: 'A', label: 'être déposée en mairie' },
+			{ id: 'B', label: 'être enregistrée à la DREAL' },
+			{ id: 'C', label: 'être mentionnée sur le bulletin de salaire' },
+			{
+				id: 'D',
+				label: 'être déclarée au greffe du tribunal de commerce',
+			},
 		],
 		resolution: 'C',
 	},
 	{
 		id: 39,
-		text: 'COURS Le repos hebdomadaire :',
+		text: 'Le temps de travail effectif à payer au salarié est :',
 		choices: [
-			{ id: 'A', label: 'peut être supprimé sans contrepartie' },
-			{ id: 'B', label: 'doit être au minimum de 24 heures consécutives' },
-			{ id: 'C', label: 'doit être pris uniquement le dimanche' },
-			{ id: 'D', label: 'n’est pas obligatoire' },
+			{
+				id: 'A',
+				label: "l'addition des temps de conduite et des travaux annexes",
+			},
+			{ id: 'B', label: 'limité aux temps de conduite' },
+			{
+				id: 'C',
+				label: "égal à l'amplitude diminuée des temps de pause et de coupure",
+			},
+			{
+				id: 'D',
+				label: 'le temps où le conducteur est présent dans l’entreprise',
+			},
 		],
 		resolution: 'C',
 	},
 	{
 		id: 40,
-		text: 'COURS L’ouverture du droit à congés payés est effective dès que le salarié a travaillé chez le même employeur :',
+		text: 'L’ouverture du droit à congés payés est effective dès que le salarié a travaillé chez le même employeur :',
 		choices: [
 			{ id: 'A', label: '1 mois de travail effectif' },
 			{ id: 'B', label: '2 semaines de travail effectif' },
@@ -565,110 +614,145 @@ export const QCM = [
 	},
 	{
 		id: 41,
-		text: 'Le nombre de jours de congés payés acquis par mois de travail effectif est de :',
+		text: 'L’application d’une convention collective étendue est obligatoire :',
 		choices: [
-			{ id: 'A', label: '1 jour' },
-			{ id: 'B', label: '2 jours' },
-			{ id: 'C', label: '2,5 jours' },
-			{ id: 'D', label: '3 jours' },
+			{
+				id: 'A',
+				label: 'uniquement pour les employeurs ayant signé la convention',
+			},
+			{
+				id: 'B',
+				label: 'uniquement pour les employeurs qui ont demandé l’extension',
+			},
+			{
+				id: 'C',
+				label:
+					'pour tous les employeurs exerçant les activités entrant dans son champ d’application',
+			},
+			{
+				id: 'D',
+				label:
+					'pour les employeurs de la branche professionnelle concernée qui ont plus de 10 salariés',
+			},
 		],
 		resolution: 'C',
 	},
 	{
 		id: 42,
-		text: 'COURS L’indemnité de congés payés est calculée sur :',
+		text: "Dans le cadre du licenciement pour faute, l'absence ou la non présentation du salarié à l'entretien préalable :",
 		choices: [
-			{ id: 'A', label: 'le seul salaire du dernier mois' },
+			{
+				id: 'A',
+				label:
+					"n'est pas une faute de la part du salarié, mais n'interrompt pas la procédure en cours",
+			},
 			{
 				id: 'B',
 				label:
-					'la moyenne des salaires des 12 derniers mois ou le maintien du salaire, selon ce qui est le plus avantageux',
+					"entraîne l'obligation pour l'employeur de reconvoquer le salarié",
 			},
-			{ id: 'C', label: 'la moitié du salaire du dernier mois' },
-			{ id: 'D', label: 'un forfait fixé par l’employeur' },
+			{ id: 'C', label: 'est une faute de la part du salarié' },
+			{
+				id: 'D',
+				label: "entraîne l'interdiction de poursuivre la procédure",
+			},
 		],
 		resolution: 'A',
 	},
 	{
 		id: 43,
-		text: 'Le licenciement pour faute grave :',
+		text: "Quels sont tous les documents que le chef d'entreprise doit remettre au salarié au terme d'un contrat à durée déterminée ?",
 		choices: [
-			{ id: 'A', label: 'ouvre droit à une indemnité de licenciement' },
-			{ id: 'B', label: 'n’ouvre droit à aucune indemnité de licenciement' },
-			{ id: 'C', label: 'ouvre droit au préavis' },
-			{ id: 'D', label: 'ne nécessite pas de procédure particulière' },
+			{ id: 'A', label: 'uniquement son bulletin de salaire' },
+			{
+				id: 'B',
+				label:
+					"son bulletin de salaire, un certificat de travail et une attestation d'assurance chômage",
+			},
+			{
+				id: 'C',
+				label: 'un bulletin de salaire et un reçu pour solde de tout compte',
+			},
+			{
+				id: 'D',
+				label:
+					"son bulletin de salaire, un certificat de travail, une attestation d'assurance chômage et un reçu pour solde de tout compte",
+			},
 		],
 		resolution: 'D',
 	},
 	{
 		id: 44,
-		text: 'COURS Le délai de préavis en cas de démission :',
+		text: 'Les heures de nuit indemnisées sont les heures effectuées :',
 		choices: [
-			{ id: 'A', label: 'est librement fixé par le salarié' },
-			{
-				id: 'B',
-				label: 'est fixé par la convention collective ou le contrat de travail',
-			},
-			{ id: 'C', label: 'est toujours d’un mois' },
-			{ id: 'D', label: 'n’existe pas en cas de CDI' },
+			{ id: 'A', label: 'entre 0 h et 5 h' },
+			{ id: 'B', label: 'entre 22 h et 5 h' },
+			{ id: 'C', label: 'entre 22 h et 6 heures' },
+			{ id: 'D', label: 'entre 21 h et 6 heures' },
 		],
 		resolution: 'D',
 	},
 	{
 		id: 45,
-		text: 'Le document qui récapitule les principaux éléments de la carrière du salarié à son départ de l’entreprise est :',
+		text: 'La licence de transport intérieur mentionne le poids limite de 3,5 tonnes. Il s’agit :',
 		choices: [
-			{ id: 'A', label: 'le certificat de travail' },
-			{ id: 'B', label: 'le solde de tout compte' },
-			{ id: 'C', label: 'le bulletin de paie' },
-			{ id: 'D', label: 'le contrat de travail' },
+			{ id: 'A', label: 'du poids à vide du véhicule' },
+			{ id: 'B', label: 'de son PTAC' },
+			{ id: 'C', label: 'de son PTRA' },
+			{ id: 'D', label: 'de son PMA' },
 		],
 		resolution: 'D',
 	},
 	{
 		id: 46,
-		text: 'COURS Le bulletin de paie doit mentionner obligatoirement :',
+		text: 'Le code de la route prévoit une mesure d’immobilisation du véhicule lorsque le dépassement de la masse autorisée est supérieur à :',
 		choices: [
-			{ id: 'A', label: 'le nombre d’enfants du salarié' },
-			{ id: 'B', label: 'le nombre d’heures travaillées et le salaire brut' },
-			{ id: 'C', label: 'l’avis du médecin du travail' },
-			{ id: 'D', label: 'le montant du chiffre d’affaires de l’entreprise' },
+			{ id: 'A', label: '1 %' },
+			{ id: 'B', label: '5 %' },
+			{ id: 'C', label: '10 %' },
+			{ id: 'D', label: '15 %' },
 		],
 		resolution: 'B',
 	},
 	{
 		id: 47,
-		text: 'Les cotisations sociales salariales sont prélevées sur :',
+		text: 'Un véhicule utilitaire de 3,5 T de PTAC doit subir un contrôle anti-pollution :',
 		choices: [
-			{ id: 'A', label: 'le salaire net' },
-			{ id: 'B', label: 'le salaire brut' },
-			{ id: 'C', label: 'le chiffre d’affaires' },
-			{ id: 'D', label: 'les dividendes' },
+			{ id: 'A', label: 'tous les 4 ans' },
+			{
+				id: 'B',
+				label: 'un an après son premier contrôle technique',
+			},
+			{ id: 'C', label: 'après 4 ans, puis ensuite tous les 2 ans' },
+			{ id: 'D', label: 'tous les ans' },
 		],
 		resolution: 'B',
 	},
 	{
 		id: 48,
-		text: 'COURS Les cotisations sociales patronales :',
+		text: 'Votre conducteur de messagerie est dispensé du port de la ceinture de sécurité :',
 		choices: [
-			{ id: 'A', label: 'sont payées par le salarié' },
-			{ id: 'B', label: 'sont à la charge de l’employeur' },
-			{ id: 'C', label: 'sont facultatives' },
+			{
+				id: 'A',
+				label: 'il doit toujours boucler sa ceinture de sécurité',
+			},
+			{ id: 'B', label: 'en dehors des autoroutes' },
+			{ id: 'C', label: 'en agglomération' },
 			{
 				id: 'D',
-				label: 'ne concernent que les entreprises de plus de 50 salariés',
+				label: "s'il effectue des livraisons en porte-à-porte en zone urbaine",
 			},
 		],
 		resolution: 'D',
 	},
 	{
 		id: 49,
-		text: 'Le dépassement de la durée maximale de conduite journalière par un conducteur routier entraîne :',
+		text: 'La limite de PTAC au dessus de laquelle une remorque doit être immatriculée est de :',
 		choices: [
-			{ id: 'A', label: 'une amende' },
-			{ id: 'B', label: 'un avertissement sans frais' },
-			{ id: 'C', label: 'une suspension automatique du permis' },
-			{ id: 'D', label: 'aucune conséquence' },
+			{ id: 'A', label: '350 kg' },
+			{ id: 'B', label: '500 kg' },
+			{ id: 'C', label: '750 kg' },
+			{ id: 'D', label: '3 500 kg' },
 		],
 		resolution: 'B',
 	},
