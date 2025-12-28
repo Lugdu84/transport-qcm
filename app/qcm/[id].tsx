@@ -42,8 +42,10 @@ export default function QcmScreen() {
 	const results = useMemo(() => {
 		let correct = 0;
 		let incorrect = 0;
+		let gradable = 0;
 		for (const question of qcm.questions) {
 			if (!question.resolution) continue;
+			gradable += 1;
 			const answer = answers[question.id] ?? null;
 			if (!answer) continue;
 			if (answer === question.resolution) {
@@ -56,7 +58,7 @@ export default function QcmScreen() {
 			correct,
 			incorrect,
 			score: correct * 2,
-			total: qcm.questions.length * 2,
+			total: gradable * 2,
 		};
 	}, [answers, qcm.questions]);
 
