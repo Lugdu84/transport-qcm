@@ -1,20 +1,7 @@
 import { Link } from 'expo-router';
-import { QuestionData } from '@/components/Question';
-import { QCM as QCM_1, QCM_DATE } from '@/data/qcm-1';
+import { QCMS } from '@/data/qcms';
 import { FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
-
-const QCMS: {
-	id: string;
-	dateLabel: string;
-	questions: QuestionData[];
-}[] = [
-	{
-		id: 'qcm-1',
-		dateLabel: QCM_DATE,
-		questions: QCM_1,
-	},
-];
 
 export default function Index() {
 	return (

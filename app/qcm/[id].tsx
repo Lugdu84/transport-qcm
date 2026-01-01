@@ -11,18 +11,11 @@ import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 
 import ExamTimer from '@/components/ExamTimer';
 import Question, { QuestionData } from '@/components/Question';
-import { QCM as QCM_1, QCM_DATE } from '@/data/qcm-1';
-
-const QCMS: Record<string, { dateLabel: string; questions: QuestionData[] }> = {
-	'qcm-1': {
-		dateLabel: QCM_DATE,
-		questions: QCM_1,
-	},
-};
+import { QCMS_BY_ID } from '@/data/qcms';
 
 export default function QcmScreen() {
 	const { id } = useLocalSearchParams<{ id: string }>();
-	const qcm = id ? QCMS[id] : undefined;
+	const qcm = id ? QCMS_BY_ID[id] : undefined;
 	const [answers, setAnswers] = useState<Record<number, string | null>>({});
 	const [showResults, setShowResults] = useState(false);
 	const listRef = useRef<FlatList<QuestionData>>(null);
